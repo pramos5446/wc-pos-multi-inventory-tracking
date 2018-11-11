@@ -77,7 +77,7 @@ class Wc_Pos_Multi_Inventory_Tracking {
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
-		$this->define_public_hooks();
+		//$this->define_public_hooks();
 
 	}
 
@@ -193,14 +193,14 @@ class Wc_Pos_Multi_Inventory_Tracking {
 	 * @since    1.0.0
 	 * @access   private
 	 */
-	private function define_public_hooks() {
+	/**private function define_public_hooks() {
 
 		$plugin_public = new Wc_Pos_Multi_Inventory_Tracking_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
-	}
+	}**/
 
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
