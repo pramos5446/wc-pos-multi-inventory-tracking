@@ -120,7 +120,7 @@ class Wc_Pos_Multi_Inventory_Tracking {
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wc-pos-multi-inventory-tracking-public.php';
+		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wc-pos-multi-inventory-tracking-public.php';
 
 		$this->loader = new Wc_Pos_Multi_Inventory_Tracking_Loader();
 
