@@ -30,7 +30,7 @@ class Wc_Pos_Multi_Inventory_Tracking_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
-		this->create_wc_pos_stock_track_table();
+		$this->create_wc_pos_stock_track_table();
 	}
 	
 	
